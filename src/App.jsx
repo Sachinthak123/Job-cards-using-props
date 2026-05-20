@@ -108,10 +108,10 @@ const App = () => {
 
   return (
     <>
-    <div className="uppercase font-bold flex items-center justify-center text-4xl text-white bg-black">
+    <div className="uppercase font-bold flex items-center justify-center text-4xl text-white bg-black m-2 border-b-2">
         <h1>Job Card Project using props drilling !!</h1>
       </div>
-       <div className='w-full flex flex-wrap bg-black'>
+       <div className='w-full flex flex-wrap items-center justify-center bg-black'>
     {jobs.map((item,index) => (
       <Card key={index} company={item.companyName} logo={item.brandLogo} datePosted ={item.datePosted} post={item.post} tag1={item.tag1} tag2={item.tag2} pay={item.pay} location={item.location} />
     ))}
